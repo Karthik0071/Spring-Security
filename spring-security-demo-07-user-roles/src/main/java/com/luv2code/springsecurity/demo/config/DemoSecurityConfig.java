@@ -17,7 +17,8 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		// TODO Auto-generated method stub
 		http.authorizeRequests().antMatchers("/").hasRole("EMPLOYEE").
 		antMatchers("/leaders/**").hasRole("MANAGER").
-		antMatchers("/systems/**").hasRole("ADMIN").and().formLogin().loginPage("/showMyLoginPage").loginProcessingUrl("/authenticateTheUser").permitAll().and().logout().permitAll();
+		antMatchers("/systems/**").hasRole("ADMIN").and().formLogin().loginPage("/showMyLoginPage").loginProcessingUrl("/authenticateTheUser").
+		permitAll().and().logout().permitAll().and().exceptionHandling().accessDeniedPage("/access-Denied");
 		
 		super.configure(http);
 	}

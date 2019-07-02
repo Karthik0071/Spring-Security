@@ -22,4 +22,9 @@ public class loginController {
 		
 		return "systems";
 	}
+	
+	@RequestMapping("/access-Denied")
+	public String accessdeniedpage() {
+		return "accessdenied";
+	}
 }
