@@ -11,4 +11,12 @@ public class DemoController {
 		System.out.println("Controller....");
 		return "home";
 	}
+	
+	@RequestMapping("/leaders")
+	public String showLeaders() {
+		
+		return "leaders";
+	}
+	
+ 
 }

@@ -26,6 +26,18 @@
 	</p>
 	
 	<hr>
+	 <p>
+			<a href="${pageContext.request.contextPath}/leaders">Leader-Ship meeting</a>
+			(Only for manager peers)
+	 </p>       
+	<hr>
+	
+	<hr>
+	 <p>
+			<a href="${pageContext.request.contextPath}/systems">ADMIN meeting</a>
+			(Only for ADMIN peers)
+	 </p>       
+	<hr>
 	
 	
 	<!-- Add a logout button -->
